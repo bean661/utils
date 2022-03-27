@@ -27,55 +27,55 @@ sleep 2
 npm config set registry https://mirrors.huaweicloud.com/repository/npm/
 npm config get registry
 latest_ver="$(wget -qO- -t1 -T2 "https://api.github.com/repos/npm/cli/releases/latest" |grep "tag_name" |head -n 1 |awk -F ":" '{print $2}' |sed 's/\"//g;s/,//g;s/ //g' |sed 's/^v//')"
-npm install -g npm
+npm install -g pnpm
 TIME l "升级npm至${latest_ver}"
-npm install -g npm@${latest_ver} --force
+pnpm install -g npm@${latest_ver} --force
 TIME l "安装yarn"
-npm install -g yarn --force
+pnpm install -g yarn --force
 TIME l "安装依赖date-fns"
-yarn add date-fns
+pnpm install date-fns
 TIME l "安装依赖axios"
-yarn add axios
+pnpm install axios
 TIME l "安装依赖ts-node"
-yarn add ts-node
+pnpm install ts-node
 TIME l "安装依赖typescript"
-yarn add typescript
+pnpm install typescript
 TIME l "安装依赖png-js"
-npm install -g png-js
+pnpm install -g png-js
 TIME l "安装依赖crypto-js"
-npm install -g crypto-js
+pnpm install -g crypto-js
 TIME l "安装依赖md5"
-npm install -g md5
+pnpm install -g md5
 TIME l "安装依赖ts-md5"
-npm install -g ts-md5
+pnpm install -g ts-md5
 TIME l "安装依赖tslib"
-npm install -g tslib
+pnpm install -g tslib
 TIME l "安装依赖@types/node"
-npm install -g @types/node
+pnpm install -g @types/node
 TIME l "安装依赖requests"
 pip3 install requests
 TIME l "安装依赖tough-cookie"
-npm install -g tough-cookie
+pnpm install -g tough-cookie
 TIME l "安装依赖jsdom"
-npm install -g jsdom
+pnpm install -g jsdom
 TIME l "安装依赖download"
 pip3 install download
 TIME l "安装依赖tunnel"
-npm install -g tunnel
+pnpm install -g tunnel
 TIME l "安装依赖fs"
-npm install -g fs
+pnpm install -g fs
 TIME l "安装依赖ws"
-npm install -g ws
+pnpm install -g ws
 TIME l "安装依赖js-base64"
-npm install -g js-base64
+pnpm install -g js-base64
 TIME l "安装依赖moment"
-npm install -g moment
+pnpm install -g moment
 TIME l "安装依赖PyExecJS"
 pip3 install PyExecJS
 TIME l "安装依赖jieba"
 pip3 install jieba
 TIME l "安装cairo-dev"
-npm install -g got
+pnpm install -g got
 cd /ql/scripts/ && apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev
 cd /ql
 pip3 install canvas
