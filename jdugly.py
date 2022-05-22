@@ -204,7 +204,7 @@ def reward(mycookie):
         }
         ua = 'MQQBrowser/26 Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; MB200 Build/GRJ22; CyanogenMod-7) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
         res = res_post('h5receiveRedpacketAll', mycookie, body, ua)
-        logger.info(res)
+        #.info(res)
         if res != -1:
             if res['rtn_code'] == 0 and res['data']['biz_code'] == 0:
                 logger.info(f"{res['data']['biz_msg']}：{res['data']['result']['discount']}元")
