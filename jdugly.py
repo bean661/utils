@@ -110,9 +110,9 @@ def res_post(functionId, cookie, body, ua):
     try:
         global res
         if url_proxies_api == "":
-            res = requests.post(url=url, headers=headers, data=data).json()
+            res = requests.post(url=url, headers=headers, data=data, timeout=(5,5)).json()
         else:
-            res = requests.post(url=url, headers=headers, data=data, proxies=get_proxies()).json()
+            res = requests.post(url=url, headers=headers, data=data, proxies=get_proxies(),timeout=(5,5)).json()
         return res
     except:
         return -1
