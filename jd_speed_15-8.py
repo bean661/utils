@@ -44,7 +44,8 @@ atime = 0
 PUSH_PLUS_TOKEN = ''
 title = '京东15-8抢券成功'
 content = []
-url_log = os.environ["PUSH_PLUS_TOKEN"]
+url_log = get_env('url_log')
+
 if "PUSH_PLUS_TOKEN" in os.environ and len(os.environ["PUSH_PLUS_TOKEN"]) > 1:
     PUSH_PLUS_TOKEN = os.environ["PUSH_PLUS_TOKEN"]
 
@@ -53,8 +54,7 @@ def get_log_list(num):
     global log_list
     try:
         for i in range(num):
-            url = f'str(url_log)'
-            res = requests.get(url=url).json()
+            res = requests.get(url=url_log).json()
             log_list.append(res)
     except:
         log_list = []
