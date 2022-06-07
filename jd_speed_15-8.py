@@ -44,7 +44,7 @@ atime = 0
 PUSH_PLUS_TOKEN = ''
 title = '京东15-8抢券成功'
 content = []
-url_log = get_env('url_log')
+url_log = os.environ["url_log"]
 
 if "PUSH_PLUS_TOKEN" in os.environ and len(os.environ["PUSH_PLUS_TOKEN"]) > 1:
     PUSH_PLUS_TOKEN = os.environ["PUSH_PLUS_TOKEN"]
