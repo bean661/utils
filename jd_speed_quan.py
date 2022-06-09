@@ -37,7 +37,7 @@ cookies=[cookies[0],cookies[1],cookies[2],cookies[3],cookies[4],cookies[5]]
 #starttime = 1652428798000 # 开始时间戳 13位 网址：https://tool.lu/timestamp/   5/8 5/7 23:59:58
 
 range_n = int(len(cookies)) *10  # 线程个数
-range_sleep = 0.4  # 间隔时间
+range_sleep = 0.04  # 间隔时间
 
 # 没用的参数
 log_list = []
