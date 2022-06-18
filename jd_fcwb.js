@@ -69,8 +69,8 @@ await home()
         
     }
     await List(cookiesArr[0])
-    if(totalNum==30){
-        $.log('账号1邀请人数已达30自动停止')
+    if(totalNum==111){
+        $.log('账号1邀请人数已达111自动停止')
         break
     }
 }
