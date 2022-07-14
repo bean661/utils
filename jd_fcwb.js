@@ -69,7 +69,7 @@ await home()
         
     }
     await List(cookiesArr[0])
-    if(totalNum==11){
+    if(totalNum==111){
         $.log('账号1邀请人数已达11自动停止')
         break
     }
