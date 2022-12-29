@@ -88,6 +88,9 @@ cd /ql
 TIME l "安装依赖PyExecJS..."
 pip3 install PyExecJS
 cd /ql
+TIME l "安装依赖ds..."
+pip3 install ds
+cd /ql
 TIME l "安装依赖moment..."
 npm install -g moment
 cd /ql
