@@ -79,6 +79,12 @@ cd /ql
 TIME l "安装依赖ws..."
 npm install -g ws
 cd /ql
+TIME l "安装依赖global-agent..."
+npm install -g global-agent
+cd /ql
+TIME l "安装依赖bootstrap..."
+npm install -g bootstrap
+cd /ql
 TIME l "安装依赖form-data..."
 npm install -g form-data
 cd /ql
