@@ -84,12 +84,16 @@ npm install -g global-agent
 cd /ql
 TIME l "安装依赖bootstrap..."
 npm install -g bootstrap
+TIME l "安装依赖node-rsa..."
+npm install -g node-rsa
 cd /ql
 TIME l "安装依赖form-data..."
 npm install -g form-data
 cd /ql
 TIME l "安装依赖requests..."
 pip3 install requests
+TIME l "lxml..."
+pip install lxml
 cd /ql
 TIME l "安装依赖PyExecJS..."
 pip3 install PyExecJS
