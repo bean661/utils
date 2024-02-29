@@ -109,6 +109,8 @@ npm install -g js-base64
 cd /ql
 TIME l "安装依赖user_agent..."
 pip install -U user_agent
+TIME l "安装依赖pyDes..."
+pip install pyDes
 cd /ql
 echo
 TIME g "依赖安装完毕..."
