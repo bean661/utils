@@ -107,6 +107,9 @@ cd /ql
 TIME l "安装依赖js-base64..."
 npm install -g js-base64
 cd /ql
+TIME l "安装依赖user_agent..."
+pip install -U user_agent
+cd /ql
 echo
 TIME g "依赖安装完毕..."
 echo
